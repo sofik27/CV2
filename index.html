@@ -6,30 +6,41 @@
     <meta name="description" content="Обо мне. Моё образование и опыт работы">
     <meta name="keywords" content="резюме, Екатерина, верстальщик, веб-дизайнер, со знанием итальянского и английского языков">
     <title>Резюме</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="myphoto.jpg" alt="моё фото" width="150">
-    <h1>Екатерина Бойцова</h1>
-    <p>По основному образованию <strong>Провизор.</strong> <em>Работаю в фармацевтической компании.</em> <br> По дополнительному образованию: <strong><em>UX/UI дизайнер, веб-дизайнер, верстальщик, дизайнер интерьеров.</em></strong> Знаю английский и итальянский языки. <hr> Люблю путешествовать, открывать новые места, постоянно учиться новому.</p>
-    <h3>Список социальных сетей</h3>
-    <a href="https://vk.com/feed" target="_blank">Вконтакте</a>
-    |
-    <a href="https://vk.com/feed" target="_blank">Инстаграм</a>
-    |
-    <h3>Хобби</h3>
-    <ol>
+    <div class="container">
+    <div class="info">
+        <img src="myphoto.jpg" alt="моё фото" class="avatar">
+        <div class="info-text">
+          <h1>Екатерина Бойцова</h1>
+          <p>По основному образованию <strong>Провизор.</strong> <em>Работаю в фармацевтической компании.</em> <br> По дополнительному образованию: <strong><em>UX/UI дизайнер, веб-дизайнер, верстальщик, дизайнер интерьеров.</em></strong> Знаю английский и итальянский языки. <br> Люблю путешествовать, открывать новые места, постоянно учиться новому.</p>
+          <h4>Список социальных сетей</h4>
+          <a href="https://vk.com/feed" target="_blank">Вконтакте</a>
+          |
+          <a href="https://vk.com/feed" target="_blank">Инстаграм</a>
+          |
+        </div>
+    </div>
+    
+<div class="card bg-orange">
+      <h3>Хобби</h3>
+      <ol class="list">
         <li>Путешествия</li>
         <li>Языки</li>
         <li>Танцы</li>
         <li>Чтение</li>
     </ol>
+  </div>
+
+  <div class="card bg-blue">
     <h3>Опыт работы</h3>
-    <table>
+    <table class="table">
         <thead>
             <tr>
-                <th>Название места работы</th>
-                <th>Должность</th>
-                <th>Период работы</th>
+                <th class="text">Название места работы</th>
+                <th class="text">Должность</th>
+                <th class="text">Период работы</th>
             </tr>
         </thead>
         <tbody>
@@ -50,25 +61,29 @@
             </tr>
         </tbody>
     </table>
-    <h3>Связаться со мной</h3>
-    <form>
-        <div>
+</div>
+
+    
+    <form class="form">
+        <h2>Связаться со мной</h2>
+        <div class="form-row">
+        <div class="form-group">
             <label for="name">Ваше имя:</label>
             <input type="name" id="name" placeholder="Введите ваше имя">
         </div>
         
-        <div>
+        <div class="form-group">
             <label for="email">Ваш email:</label>
             <input type="email" id="email" placeholder="Введите ваш email">
         </div>
-
-        <div>
+    </div>
+    
+        <div class="form-group">
             <label for="message">Ваше сообщение:</label>
-            <br>
-            <textarea id="message" cols="25" rows="5" placeholder="Веедите сообщение..."></textarea>
+            <textarea id="message" cols="25" rows="5" placeholder="Введите сообщение..."></textarea>
         </div>
-        <button type="submit">Отправить</button>
+        <button class="btn" type="submit">Отправить</button>
     </form>
-
-
+</div>
+</body>
 </html>
